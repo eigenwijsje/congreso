@@ -1,0 +1,47 @@
+body {
+    color: #2e3436;
+}
+
+a {
+    color: #f57900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #555753;
+}
+
+#menu {
+    text-align: center;
+}
+    #menu ul {
+        background-color: #8f5902;
+        text-align: left;
+        list-style: none;
+        margin: 0; 
+        padding: 13px;
+    }
+        #menu ul li {
+            padding: 11px 7px 11px 7px;
+            display: inline;
+        }
+        #menu ul li a {
+            padding: 3px; 
+        }
+
+#side-content ul li {
+    list-style: none;
+}
+
+form ul.errorlist {
+    margin: 0; 
+}
+    form ul.errorlist li {
+        list-style: none; 
+    }
+
+form table tr td ul {
+    margin: 0;
+}
+    form table tr td ul li {
+        list-style: none;
+    }

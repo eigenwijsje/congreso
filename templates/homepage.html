@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}CONASOL 2008 - 13, 14 y 15 de noviembre, La Paz - Bolivia{% endblock %}
+
+{% block body %}
+<div class="span-11 prepend-3" id="content">
+    <h3><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h3>
+
+    <div class="entry">
+        {{ entry.body|safe }}
+
+        <hr noshade/>
+
+        <p>
+        <span class="">
+            <a href="{% url author-entry-list entry.author.username %}">{{ entry.author.get_full_name }}</a>
+        </span>
+        |
+        <span class="">{{ entry.posted|date:"j F Y, P"}}</span>
+        |
+        <span class="">
+            {% for category in entry.categories.all %}
+            <a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
+            {% endfor %}
+        </span>
+        </p>
+    </div>
+</div>
+
+<div class="span-7 append-3 last" id="side-content">
+    <h4>Amigos</h4>
+
+    <ul>
+        <li><a href="http://www.softwarelibre.org.bo/">Comunidad de software libre Bolivia</a></li>
+        <li><a href="http://www.ubuntubolivia.org/">LoCo team Ubuntu Bolivia</a></li>
+        <li><a href="http://www.solmujeres.org/">Comunidad Sol Mujeres</a></li>
+        <li><a href="http://www.boliviaos.org/">BoliviaOS</a></li>
+    </ul>
+</div>
+{% endblock %}

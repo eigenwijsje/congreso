@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% load humanize %}
+
+{% block title %}Activación de cuenta | {{ block.super }}{% endblock %}
+
+{% block form %}
+<h2>Activación de Cuenta</h2>
+
+{% if account %}
+<p class="success">Gracias por registrarte! Ahora puedes proceder a <a href="/accounts/login/">identificarte</a></p>
+{% else %}
+<p class="error">Lo sentimos pero algo no ha funcionado.  O tu enlace de activación no es correcto, o el enlace de activaci&oacute;n para tu cuenta ha expirado; los enlaces de activación son válidos por {{ expiration_days|apnumber }} días después del registro.</p>
+{% endif %}
+{% endblock %}

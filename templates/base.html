@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>{% block title %}VIII Congreso Nacional de Software Libre{% endblock %}</title>
+    <link rel="stylesheet" href="/sitemedia/blueprint/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/sitemedia/blueprint/print.css" type="text/css" media="print"> 
+    <!--[if IE]><link rel="stylesheet" href="/sitemedia/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="/sitemedia/styles/congreso.css" type="text/css">
+    {% block extra-head %}{% endblock %}
+</head>
+
+<body>
+
+<div class="container">
+    <div id="header" class="span-5 prepend-3 large">
+        CONASOL 2008<br/>
+        13, 14 y 15 de Noviembre
+    </div>
+
+    <div class="span-13 last">
+        LOGO
+    </div>
+    <div id="menu" class="span-18 prepend-3 append-3 last">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/acerca-del-congreso-nacional-de-software-libre-2008/">Acerca del Congreso</a></li>
+            <li><a href="/llamado-a-trabajos/">Lllamado a trabajos</a><li>
+            <li><a href="http://softwarelibre.org.bo/wiki/conasol2008">Wiki</a></li>
+            <li><a href="http://www.ci-lapaz.gov.bo/ES/Oficialias/PromoEconomica/PromocionTuristica/Turismo/Paginas/default.aspx">La Paz</a></li>
+            <li><a href="{% url register-register %}">Inscripción</a></li>
+        </ul>
+    </div>
+    
+    {% block body %}
+    <div id="content" class="span-15 prepend-3 last">
+        {% block content %}{% endblock %}
+    </div>
+    {% endblock %}
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}{{ entry.title }} | {{ block.super }}{% endblock %}
+
+{% block content %}
+<div class="entry">
+    <h2>{{ entry.title }}</h2>
+    
+    {{ entry.body|safe }}
+
+    <hr/>
+    <span class="author">
+        <a href="{{ entry.get_absolute_url }}">{{ entry.author.get_full_name }}</a>
+    </span> 
+    |
+    <span class="posted">{{ entry.posted|date:"j F Y, H:m" }}</span>
+    |
+    <span class="categories">
+        {% for category in entry.categories.all %}
+        <a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
+        {% endfor %}
+    </span>
+</div>
+{% endblock %}

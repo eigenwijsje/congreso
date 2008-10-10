@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Entradas más recientes | {{ block.super }}{% endblock %}
+
+{% block content %}
+{% for entry in latest %}
+<div class="entry">
+<h3><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h3>
+
+{{ entry.body|safe }}
+
+<p class="author"></p>
+<p class="categories"></p>
+<p class="posted"></p>
+</div>
+{% endfor %}
+{% endblock %}

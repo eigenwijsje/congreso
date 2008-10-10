@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title %}Envio de Propuesta | {{ block.super }}{% endblock %}
+
+{% block content %}
+<h2>Envío de Propuesta</h2>
+
+<form action="." method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Datos del Autor</legend>
+        <table>
+            <tr>
+                <td><label for="id_first_name">Nombre(s):</label></td>
+                <td>
+                    {% if author_form.first_name.errors %}
+                    <div class="error">
+                        {{ author_form.first_name.errors }}
+                        {{ author_form.first_name }}
+                    </div>
+                    {% else %}
+                        {{ author_form.first_name }}
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td><label for="id_last_name">Apellido(s):</label></td>
+                <td>
+                    {% if author_form.last_name.errors %}
+                    <div class="error">
+                        {{ author_form.last_name.errors }}
+                        {{ author_form.last_name }}
+                    </div>
+                    {% else %}
+                        {{ author_form.last_name }}
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td><label for="id_email">Dirección de correo electrónico:</label></td>
+                <td>
+                    {% if author_form.email.errors %}
+                    <div class="error">
+                        {{ author_form.email.errors }}
+                        {{ author_form.email }}
+                    </div>
+                    {% else %}
+                        {{ author_form.email }}
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td><label for="id_short_bio">Biografía:</label></td>
+                <td>
+                    {% if author_form.short_bio.errors %}
+                    <div class="error">
+                        {{ author_form.short_bio.errors }}
+                        {{ author_form.short_bio }}
+                    </div>
+                    {% else %}
+                        {{ author_form.short_bio }}
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Propuesta</legend>
+        <table>
+            <tr>
+                <td><label for="id_title">Título:</label></td>
+                <td>
+                    {% if proposal_form.title.errors %}
+                    <div class="error">
+                        {{ proposal_form.title.errors }}
+                        {{ proposal_form.title }}
+                    </div>
+                    {% else %}
+                        {{ proposal_form.title }}
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td><label for="id_summary">Resumen:</label></td>
+                <td>
+                    {% if proposal_form.summary.errors %}
+                    <div class="error">
+                        {{ proposal_form.summary.errors }}
+                        {{ proposal_form.summary }}
+                    </div>
+                    {% else %}
+                        {{ proposal_form.summary }}
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td><label for="id_attachment">Archivo adjunto:</label></td>
+                <td>
+                    {% if proposal_form.attachment.errors %}
+                    <div class="error">
+                        {{ proposal_form.attachment.errors }}
+                        {{ proposal_form.attachment }}
+                    </div>
+                    {% else %}
+                        {{ proposal_form.attachment }}
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <p><input type="submit" value="enviar"/></p>
+</form>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Identificarse | {{ block.super }}{% endblock %}
+
+{% block content %}
+<h2>Identificarse</h2>
+
+{% if form.errors %}
+<p class="error">Tu nombre de usuario y contraseña no coinciden. Por favor intenta nuevamente.</p>
+{% endif %}
+
+<form action="." method="POST">
+    <table>
+        <tr>
+            <td><label for="id_username">Nombre de usuario</label></td>
+            <td>
+            {% if form.username.errors %}
+                <div class="error">
+                    {{ form.username.errors }}
+                    {{ form.username }} 
+                </div>
+            {% else %}
+                {{ form.username }}
+            {% endif %}
+            </td>
+        </li>
+        <li>
+            <td><label for="id_password">Contraseña</label></td>
+            <td>
+            {% if form.password1.errors %}
+                <div class="error">
+                    {{ form.password1.errors }}
+                    {{ form.password1 }}
+                </div>
+            {% else %}
+                {{ form.password }}
+            {% endif %}
+        </li>
+    </table>
+
+    <p><input type="submit" value="indentificarse"></p>
+</form>
+{% endblock %}

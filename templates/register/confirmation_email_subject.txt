@@ -1,0 +1,1 @@
+[{{ site.name }}]: Confirmación de Inscripción {{ event.name }}

@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-09 11:28-0400\n"
+"PO-Revision-Date: 2008-10-09 11:28-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: models.py:8
+msgid "name"
+msgstr "nombre"
+
+#: models.py:9 models.py:29
+msgid "slug"
+msgstr "slug"
+
+#: models.py:13
+msgid "category"
+msgstr "categoría"
+
+#: models.py:14 models.py:27
+msgid "categories"
+msgstr "categorías"
+
+#: models.py:25
+msgid "author"
+msgstr "autor"
+
+#: models.py:28
+msgid "title"
+msgstr "título"
+
+#: models.py:30
+msgid "body"
+msgstr "cuerpo"
+
+#: models.py:37
+msgid "entry"
+msgstr "entrada"
+
+#: models.py:38
+msgid "entries"
+msgstr "entradas"

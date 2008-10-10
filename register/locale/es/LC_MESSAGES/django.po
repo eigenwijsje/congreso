@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-10 17:22-0400\n"
+"PO-Revision-Date: 2008-10-09 11:31-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: models.py:8 models.py:88
+msgid "name"
+msgstr "nombre"
+
+#: models.py:9 models.py:90
+msgid "slug"
+msgstr "slug"
+
+#: models.py:10 models.py:91
+msgid "description"
+msgstr "descripción"
+
+#: models.py:11
+msgid "is current"
+msgstr "es actual"
+
+#: models.py:12 models.py:95
+msgid "registration is closed"
+msgstr "la inscripción está cerrada"
+
+#: models.py:14 models.py:98
+msgid "start date"
+msgstr "fecha de inicio"
+
+#: models.py:15
+msgid "end date"
+msgstr "fecha de cierre"
+
+#: models.py:16
+msgid "registration fee"
+msgstr "cuota inscripción"
+
+#: models.py:17 models.py:97
+msgid "registration close date"
+msgstr "fecha de cierre de inscripción "
+
+#: models.py:21 models.py:44 models.py:87
+msgid "event"
+msgstr "evento"
+
+#: models.py:22
+msgid "events"
+msgstr "eventos"
+
+#: models.py:33 models.py:123
+msgid "registration count"
+msgstr "inscritos"
+
+#: models.py:37
+msgid "attendee"
+msgstr "asistente"
+
+#: models.py:38
+msgid "helper"
+msgstr "colaborador"
+
+#: models.py:39
+msgid "organizer"
+msgstr "organizador"
+
+#: models.py:40
+msgid "speaker"
+msgstr "ponente"
+
+#: models.py:41
+msgid "sponsor"
+msgstr "patrocinador"
+
+#: models.py:45
+msgid "first name"
+msgstr "nombre(s)"
+
+#: models.py:46
+msgid "last name"
+msgstr "apellido(s)"
+
+#: models.py:47
+msgid "e-mail address"
+msgstr "dirección de correo electrónico"
+
+#: models.py:48
+msgid "organization"
+msgstr "organización/empresa"
+
+#: models.py:50
+msgid "phone number"
+msgstr "número de teléfono"
+
+#: models.py:51
+msgid "address"
+msgstr "dirección"
+
+#: models.py:52
+msgid "city"
+msgstr "ciudad"
+
+#: models.py:53
+msgid "country"
+msgstr "país"
+
+#: models.py:54
+msgid "is student"
+msgstr "es estudiante"
+
+#: models.py:55
+msgid "amount paid"
+msgstr "monto pagado"
+
+#: models.py:56
+msgid "status"
+msgstr "estatus"
+
+#: models.py:58
+msgid "notes"
+msgstr "notas"
+
+#: models.py:60
+msgid "date paid"
+msgstr "fecha de pago"
+
+#: models.py:64 models.py:127
+msgid "registration"
+msgstr "inscripción"
+
+#: models.py:65 models.py:101
+msgid "registrations"
+msgstr "inscripciones"
+
+#: models.py:83
+msgid "amount due"
+msgstr "monto adeudado"
+
+#: models.py:89
+msgid "title"
+msgstr "título"
+
+#: models.py:92
+msgid "duration"
+msgstr "duración"
+
+#: models.py:93
+msgid "cost"
+msgstr "costo"
+
+#: models.py:94
+msgid "maximal registrations"
+msgstr "máximo de inscripciones"
+
+#: models.py:103
+msgid "date last updated"
+msgstr "fecha de última actualización"
+
+#: models.py:105
+msgid "date closed"
+msgstr "fecha de cierre"
+
+#: models.py:111 models.py:129
+msgid "workshop"
+msgstr "taller"
+
+#: models.py:112
+msgid "workshops"
+msgstr "talleres"
+
+#: models.py:134
+msgid "workshop registration"
+msgstr "inscripción a taller"
+
+#: models.py:135
+msgid "workshop registrations"
+msgstr "inscripciones a talleres"
+
+#: models.py:138
+#, python-format
+msgid "%(first_name)s %(last_name)s is registered for %(name)s"
+msgstr "%(first_name)s %(last_name)s está inscrio para %(name)s"

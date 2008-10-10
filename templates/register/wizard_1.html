@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Formulario de Inscripción | {{ block.super }}{% endblock %}
+
+{% block content %}
+<h2>Formulario de Inscripción: {{ step }} de {{ step_count }}</h2>
+
+<form action="." method="post">
+    <table>
+        <tr>
+            <td><label for="id_1-workshops">Talleres:</label></td>
+            <td>{{ form.workshops }}</td>
+        </tr>
+    </table>
+
+    <input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
+
+    {{ previous_fields|safe }}
+
+    <p><input type="submit" value="inscribirme"/></p>
+</form>
+{% endblock %}
