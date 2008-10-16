@@ -53,9 +53,12 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.flatpages',
+    'django.contrib.humanize',
     'contact_form',
     'registration',
     'blog',
     'program',
     'register',
 )
+
+ACCOUNT_ACTIVATION_DAYS = 7
