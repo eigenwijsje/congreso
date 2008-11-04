@@ -52,6 +52,8 @@ class Registration(models.Model):
     city = models.CharField(_('city'), max_length=16)
     country = models.CharField(_('country'), max_length=16)
     is_student = models.BooleanField(_('is student'), default=False)
+    is_from_other_city = models.BooleanField(_('is from other city'),
+         default=False)
     amount_paid = models.IntegerField(_('amount paid'), default=0)
     status = models.CharField(_('status'), choices=STATUS_CHOICES, 
         default='attendee', max_length=16)
@@ -71,15 +73,23 @@ class Registration(models.Model):
         if not self.pk:
             self.event = Event.objects.get(is_current=True)
 
-        if self.amount_paid>0:
+        if self.amount_paid>0 and not self.paid:
             self.paid = datetime.now()
 
         super(Registration, self).save()
 
     def amount_due(self):
+        if self.is_student:
+            if self.is_from_other_city:
+                reduction = 70
+            else:
+                reduction = 50
+        else:
+            reduction = 0
+
         workshops_costs = sum([w.cost for w in self.workshops.all()])
 
-        return self.event.registration_fee+ workshops_costs
+        return self.event.registration_fee + workshops_costs - reduction
     amount_due.short_description = _('amount due')
 
 class Workshop(models.Model):
