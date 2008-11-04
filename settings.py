@@ -11,7 +11,7 @@ ADMINS = (
 MANAGERS = ADMINS
 
 DATABASE_ENGINE = 'sqlite3'
-DATABASE_NAME = os.path.join(basedir, 'solmujeres.sqlite')
+DATABASE_NAME = os.path.join(basedir, 'congreso.sqlite')
 
 TIME_ZONE = 'America/La_Paz'
 
