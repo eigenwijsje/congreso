@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-10 17:22-0400\n"
+"POT-Creation-Date: 2008-11-05 20:30-0400\n"
 "PO-Revision-Date: 2008-10-09 11:31-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: models.py:8 models.py:88
+#: models.py:8 models.py:98
 msgid "name"
 msgstr "nombre"
 
-#: models.py:9 models.py:90
+#: models.py:9 models.py:100
 msgid "slug"
 msgstr "slug"
 
-#: models.py:10 models.py:91
+#: models.py:10 models.py:101
 msgid "description"
 msgstr "descripción"
 
@@ -32,11 +32,11 @@ msgstr "descripción"
 msgid "is current"
 msgstr "es actual"
 
-#: models.py:12 models.py:95
+#: models.py:12 models.py:105
 msgid "registration is closed"
 msgstr "la inscripción está cerrada"
 
-#: models.py:14 models.py:98
+#: models.py:14 models.py:108
 msgid "start date"
 msgstr "fecha de inicio"
 
@@ -48,11 +48,11 @@ msgstr "fecha de cierre"
 msgid "registration fee"
 msgstr "cuota inscripción"
 
-#: models.py:17 models.py:97
+#: models.py:17 models.py:107
 msgid "registration close date"
 msgstr "fecha de cierre de inscripción "
 
-#: models.py:21 models.py:44 models.py:87
+#: models.py:21 models.py:44 models.py:97
 msgid "event"
 msgstr "evento"
 
@@ -60,7 +60,7 @@ msgstr "evento"
 msgid "events"
 msgstr "eventos"
 
-#: models.py:33 models.py:123
+#: models.py:33 models.py:133
 msgid "registration count"
 msgstr "inscritos"
 
@@ -121,74 +121,78 @@ msgid "is student"
 msgstr "es estudiante"
 
 #: models.py:55
+msgid "is from other city"
+msgstr "es de otra ciudad"
+
+#: models.py:57
 msgid "amount paid"
 msgstr "monto pagado"
 
-#: models.py:56
+#: models.py:58
 msgid "status"
 msgstr "estatus"
 
-#: models.py:58
+#: models.py:60
 msgid "notes"
 msgstr "notas"
 
-#: models.py:60
+#: models.py:62
 msgid "date paid"
 msgstr "fecha de pago"
 
-#: models.py:64 models.py:127
+#: models.py:66 models.py:137
 msgid "registration"
 msgstr "inscripción"
 
-#: models.py:65 models.py:101
+#: models.py:67 models.py:111
 msgid "registrations"
 msgstr "inscripciones"
 
-#: models.py:83
+#: models.py:93
 msgid "amount due"
 msgstr "monto adeudado"
 
-#: models.py:89
+#: models.py:99
 msgid "title"
 msgstr "título"
 
-#: models.py:92
+#: models.py:102
 msgid "duration"
 msgstr "duración"
 
-#: models.py:93
+#: models.py:103
 msgid "cost"
 msgstr "costo"
 
-#: models.py:94
+#: models.py:104
 msgid "maximal registrations"
 msgstr "máximo de inscripciones"
 
-#: models.py:103
+#: models.py:113
 msgid "date last updated"
 msgstr "fecha de última actualización"
 
-#: models.py:105
+#: models.py:115
 msgid "date closed"
 msgstr "fecha de cierre"
 
-#: models.py:111 models.py:129
+#: models.py:121 models.py:139
 msgid "workshop"
 msgstr "taller"
 
-#: models.py:112
+#: models.py:122
 msgid "workshops"
 msgstr "talleres"
 
-#: models.py:134
+#: models.py:144
 msgid "workshop registration"
 msgstr "inscripción a taller"
 
-#: models.py:135
+#: models.py:145
 msgid "workshop registrations"
 msgstr "inscripciones a talleres"
 
-#: models.py:138
+#: models.py:148
 #, python-format
 msgid "%(first_name)s %(last_name)s is registered for %(name)s"
 msgstr "%(first_name)s %(last_name)s está inscrio para %(name)s"
