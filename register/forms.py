@@ -22,8 +22,7 @@ class WorkshopsForm(forms.Form):
         registration_is_closed=False)
 
     choices = [(w['id'], u'%s, %s Bs.' % \
-        (w['title'], w['cost'])) \
-            for w in queryset.values()]
+        (w['title'], w['cost'])) for w in queryset.values()]
 
     workshops = forms.MultipleChoiceField(choices=choices, required=False,
         widget=forms.CheckboxSelectMultiple())
@@ -50,7 +49,7 @@ class RegistrationWizard(FormWizard):
             { 'site': current_site })
         subject = ''.join(subject.splitlines())
         message = render_to_string('register/confirmation_email.txt',
-                {'registration': registration})
+            {'registration': registration})
         send_mail(subject, message, settings.DEFAULT_FROM_EMAIL,
             [registration.email])
 
