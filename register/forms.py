@@ -5,7 +5,6 @@ from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
 from django import forms
-from django.shortcuts import render_to_response
 from django.template.loader import render_to_string
 
 from models import Event, Registration, Workshop, WorkshopRegistration
