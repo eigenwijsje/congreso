@@ -1,6 +1,8 @@
 Confirmación de Inscripción {{ registration.event.name }}
 
 Nombre(s) y Apellido(s): {{ registration.first_name }} {{ registration.last_name }}
+Carnet de Indentidad/Pasaporte: {{ registration.id_number }}
+Número de recibo: {{ registration.receipt_number }}
 Dirección de correo electrónico: {{ registration.email }}
 {% if registration.organization %}Organización/Empresa: {{ registration.organization }}{% endif %}
 Numero de teléfono: {{ registration.phone }}
@@ -8,10 +10,4 @@ Ciudad: {{ registration.city }}
 País: {{ registration.country }}
 Estudiante: {% if registration.is_student %}Si{% else %}No{% endif %}
 
-{% if registration.workshops %}
-Te has inscrito a los siguientes talleres:
-    {% for workshop in registration.workshops.all %}
-    * {{ workshop }}
-    {% endfor %}
-{% endif %}
 Fecha y hora de inscripción: {{ registration.registered|date:"j F Y, P" }}
