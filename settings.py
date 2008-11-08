@@ -59,6 +59,7 @@ INSTALLED_APPS = (
     'blog',
     'program',
     'register',
+    'workshops',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7
