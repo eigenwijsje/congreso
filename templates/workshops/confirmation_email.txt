@@ -1,0 +1,13 @@
+Confirmación de Inscripción {{ registration.event.name }}
+
+Nombre(s) y Apellido(s): {{ registration.first_name }} {{ registration.last_name }}
+Carnet de Indentidad/Pasaporte: {{ registration.id_number }}
+Número de recibo: {{ registration.receipt_number }}
+Dirección de correo electrónico: {{ registration.email }}
+
+Talleres:
+{% for workshop in registration.workshops.all %}
+* {{ workshop.title }} {{ workshop.trainer }}
+{% endfor %}
+
+Fecha y hora de inscripción: {{ registration.registered|date:"j F Y, P" }}

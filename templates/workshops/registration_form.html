@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}Formulario de Inscripción | {{ block.super }}{% endblock %}
+
+{% block content %}
+<h2>Formulario de Inscripción</h2>
+
+{% if form.errors %}
+<p class="error"> Por favor corrige los errores a continuación. </p>
+{% endif %}
+
+<form action="." method="post">
+    <table>
+        <tr>
+            <td><label for="id_first_name">Nombre(s)</label></td>
+            <td>
+                {% if form.first_name.errors %}
+                <div class="error">
+                    {{ form.first_name.errors }}
+                    {{ form.first_name }}
+                </div>
+                {% else %}
+                {{ form.first_name }}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td><label for="id_last_name">Apellido(s)</label></td>
+            <td>
+                {% if form.last_name.errors %}
+                <div class="error">
+                    {{ form.last_name.errors }}
+                    {{ form.last_name }}
+                </div>
+                {% else %}
+                {{ form.last_name }}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td><label for="id_id_number">Carnet de Indentidad/Pasaporte</label></td>
+            <td>
+                {% if form.id_number.errors %}
+                <div class="error">
+                    {{ form.id_number.errors }}
+                    {{ form.id_number }}
+                </div>
+                {% else %}
+                {{ form.id_number }}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td><label for="id_receipt_number">Número de recibo</label></td>
+            <td>
+                {% if form.receipt_number.errors %}
+                <div class="error">
+                    {{ form.receipt_number.errors }}
+                    {{ form.receipt_number }}
+                </div>
+                {% else %}
+                {{ form.receipt_number }}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td><label for="id_email">Dirección de correo electrónico</label></td>
+            <td>
+                {% if form.email.errors %}
+                <div class="error">
+                    {{ form.email.errors }}
+                    {{ form.email }}
+                </div>
+                {% else %}
+                {{ form.email }}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td><label for="id_workshops">Talleres</label></td>
+            <td>
+                {{ form.workshops }}
+            </td>
+        </tr>
+    </table>
+
+    <p><input type="submit" value="inscribirse"></p>
+</form>
+{% endblock %}

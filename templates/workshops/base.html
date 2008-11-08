@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="span-11 prepend-3" id="content">
+    {% block content %}{% endblock %}
+</div>
+
+<div class="span-7 append-3 last" id="side-content">
+    <a href="{% url workshop-register %}">Inscribirse</a>
+</div>
+{% endblock %}
