@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-11-07 20:25-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: models.py:10
+msgid "event"
+msgstr "evento"
+
+#: models.py:11
+msgid "title"
+msgstr "título"
+
+#: models.py:12
+msgid "slug"
+msgstr "slug"
+
+#: models.py:13
+msgid "trainer"
+msgstr "facilitador"
+
+#: models.py:14
+msgid "description"
+msgstr "descripción"
+
+#: models.py:15
+msgid "duration"
+msgstr "duración"
+
+#: models.py:16
+msgid "cost"
+msgstr "costo"
+
+#: models.py:17
+msgid "maximal registrations"
+msgstr "máximo de inscripciones"
+
+#: models.py:22
+msgid "workshop"
+msgstr "taller"
+
+#: models.py:23 models.py:49
+msgid "workshops"
+msgstr "talleres"
+
+#: models.py:34
+msgid "registration count"
+msgstr "inscritos"
+
+#: models.py:38
+msgid "is open for registration"
+msgstr "está abierta para inscripción"
+
+#: models.py:41
+msgid "first name"
+msgstr "nombre(s)"
+
+#: models.py:42
+msgid "last name"
+msgstr "apellido(s)"
+
+#: models.py:43
+msgid "identification number"
+msgstr "carnet de identidad o pasaporte"
+
+#: models.py:44
+msgid "receipt number"
+msgstr "número de recibo"
+
+#: models.py:45
+msgid "e-mail address"
+msgstr "dirección de correo electrónico"
+
+#: models.py:46
+msgid "amount paid"
+msgstr "monto pagado"
+
+#: models.py:47
+msgid "notes"
+msgstr "notas"
+
+#: models.py:51
+msgid "date paid"
+msgstr "fecha de pago"
+
+#: models.py:55
+msgid "registration"
+msgstr "inscripción"
+
+#: models.py:56
+msgid "registrations"
+msgstr "inscripciones"
+
+#: models.py:69
+msgid "amount due"
+msgstr "monto adeudado"
