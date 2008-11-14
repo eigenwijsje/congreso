@@ -8,15 +8,15 @@
 <p>
 {{ workshop.description|safe }}
 </p>
+{% endblock %}
+
+{% block side-content %}
+<p><strong>Facilitador:</strong> {{ workshop.trainer }}</p>
 
 <p>
-<strong>Costo:</strong> {{ workshop.cost }} Bs. 
+<strong>Costo:</strong> {{ workshop.cost }} Bs. <br/>
 <strong>Duración:</strong> {{ workshop.duration|time:"f" }} horas. 
 </p>
 
-{% if workshop.is_open_for_registration %}
-<p>Hay {{ workshop.registration_count }} de {{ workshop.max_registrations }} inscritos.</p>
-{% else %}
 <p>El número máximo de participantes ya ha sido alcanzado.</p>
-{% endif %}
 {% endblock %}

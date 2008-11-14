@@ -2,7 +2,7 @@ from django.contrib.sites.models import Site
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
-from datetime import datetime, time
+from datetime import datetime
 
 class Event(models.Model):
     name = models.CharField(_('name'), max_length=64)
